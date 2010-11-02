@@ -1,0 +1,369 @@
+
+---------------------------------------------------------------------
+NSF BRAINSTORM
+
+Research program
+
+Big problem: how are the acoustic categories of speech sounds represented and learned? are they innate, or learned during development?  What kinds of acoustic information is relevant, both during development and in adults?
+
+  Begin to answer these questions using computational models of statistical learning.  Compromise between nativist (built in structure of learner) and empiricist (adapt to statistics of environment) positions.
+  Consistent w/ idea that brain's job is to adapt to statistics of the world (by learning about statistics it can filter out irrelevant or redundant information and focus on the important stuff)
+  This idea has support from computational neuroscience: statistical models of natural scenes represent the world in a similar way to single units in V1.
+  Distributional learning of phonetic categories: goal is to learn efficient ("phonological") code for linguistic input
+  This process begins well before word learning is far enough along to enable traditional "minimal-pair" learning of phonemic contrasts.
+  One suggestion: make use of distribution of acoustic cues in linguistic environment.  "Mixture of (gaussian) phonemes"
+  Problem then becomes finding robust ways to estimate the proper number of categories: the modality of the distribution of accoustic cues.  This isn't an easy problem.  There's a lot of overlap between the distributions, and it's unclear even what cues are relevant.  Maybe some knowledge about the cues is hardwired (along the lines of phones of phonological features...).
+
+  ...so why bother with the cue-weighting model at all?  what's the advantage of this particular type of distributional learning, as opposed to a simple mixture of gaussians over acoustic dimensions that are known to be relevant?
+  we don't really have a good idea of what those dimensions ARE (e.g. F1/F2 for vowels).  we have to make a reasonable guess.  we do have some data on how the brain represents speech input at the level of single cells (at least in the ferret case).  this level of processing is the basis for the extraction of information further downstream so it's a good candidate for the "right" parameter space for representing speech sounds. 
+
+
+ANOTHER WAY OF THINKING ABOUT THIS:
+  Multimodal distribution in high-d space projects down onto each acoustic channel.  Hopefully some multimodality is preserved on each dimension - what exactly can this tell us about the original distribution?  Want to identify cues that 
+
+
+Sub-problem one: Unsupervised category learning from distributional information.  
+  How can you properly estimate the modality of a noisy distribution?
+
+Sub-problem two: unsupervised auditory feature extraction
+
+
+
+1) why is this problem interesting?
+2) unsupervised acoustic feature extraction from natural speech (sparse coding)
+3) unsupervised phonetic feature extraction from neural-like representations
+4) Wrap it up
+
+
+
+----------------------------------------------------------------------
+Personal statement 
+
+Very broad interests:
+  mathematics, philosophy, language, computer science
+  my training puts me in an excellent position to do good, seriously interdisciplinary cognitive science.
+  
+----------------------------------------------------------------------
+
+BRAINSTORM ING
+
+Broader impacts:
+project specific:
+tie together neuroscience, linguistics, and machine learning
+obvious potential for application
+  cochlear implants (by explicitly modeling relationship between cochlear and cortical representations)
+  more advance (cortical?) implants
+  automatic speech recognition
+re-conceptualize the problem of language
+  focus on statistics, not formal structure
+
+more generally:
+interdisciplinary-ness - interesting problems are ones that can't be solved by one discipline alone
+create connections between people working in different areas
+  language scientists should be aware of, say, visual neuroscience
+  and vice-versa!
+  knowing what the problems of one area are can inspire people in other areas
+  deeper than just "application" -- e.g. inspire creation of new types of models etc.
+popularizing more robust statistical methods and models more broadly
+interest in and deep committment to collaboration and interdisciplinary communication.  continually teaching, learning, and sharing points of view.  contextualizing my research in the broader context of cognitive science as a whole, as well as the culture at large.
+
+SOME OF THE BROADER IMPACTS OBVIOUSLY BELONG IN THE RESEARCH PROPOSAL AND SOME OBVIOUSLY BELONG IN THE PERSONAL STATEMENT.  
+
+
+*************************Play up community aspects: 
+  sought out diversity of interests and background in my intellectual communities
+  importance of multiple perspectives
+  (and not just scientific - different worldviews)
+  (honestly attempting to understand others' perspective helps us better understand our own
+  study abroad
+  interaction with, say, philosophers, mathematicians, neuroscientists, cognitive psychologists, etc.
+  what things are issues for whom?
+  progress is made when we understand, question, and back-off on our basic assumptions about the parameters of the problem. It's hard to recognize what assumptions we make. One way to understand the braoder context and system of assumptions /belief that underlies our thinking is to honestly engage with other ways of thinking about things, even if the subject matter isn't exactly the same. That is, it can be helpful to understand how a different person conceptualizes their own issues, whether they're from a different cultural community or disagree with us on a theoretical issue within our own field.
+  One of the formative experiences from my undergraduate education was reading _Selfless Persons_, which describes the Buddhist doctrine of no-self and how it is embedded within and supported by historical and regional patterns of thought as well as social practices of imagery and performance.  The sheer vastness of the amount of context that must be brought to bear on such a seemingly simple idea---that persons do not have any unitary, permanent essence or soul---made me realize how much context can and should be brought to bear on basic problems of cognitive science.
+  All this is simply to say that I fervently believe in the necessity of constant dialogue between myself as a cognitive scientist and BLANH BLAH BLAH
+
+  dual role of science: make better technology, and explain who we are, what the world is made of, etc. (constructing an interpretation of reality, telling a story)
+
+******  An essential part of successful research is the ability to identify good research questions, ones which are interesting, insightful, and tractable.  Tractability is largely a function of the methods and data available within a particular, rather narrow domain, and so requires deep, expert knowledge of that domain, whereas interestingness is more a function of the broader context of the whole field and the culture at large.  That is, in order to formulate maximally insightful and interesting research questions, it is absolutely critical to be aware of the broader context in which you are working, and in my opinion the best way to do this is to be in two-way communication with as broad a population as possible. ******
+
+  broad dissemination of work (NLC?)
+    - NLC
+    - highly interdisciplinary communities (UMD IGERT, Williams, Rochester)
+  education
+    - sharing within the department
+    - UMD IGERT (Winter Storm stats workshop)
+    One of the most invigorating aspects of the academic environment is the value assigned to continuous teaching and learning, both through informal channels and through actual collaboration on published work.
+  
+
+
+Previous research experience:
+Safa's lab
+Thesis
+Baggett
+  (Feldman model,
+  sparse coding?)
+
+
+
+----------------------------------------------------------------------
+
+Another way of looking at the cue-combination stuff:
+  phonetic dimensions ARE those acoustic dimensions where speech sounds are multimodal
+  even if we're just feeding in known phonetic contrasts and trying to figure out how each acoustic cue contribues, this is useful.
+  discover cues for other acoustic phonetic contrasts
+  try all kinds of different pairs of sounds/categories of sounds
+
+While phonetic/phonemic categories could  be defined by the presence of lexical contrast (evinced by minimal pairs, two words differing only on a single sound), this work takes a different perspective that seeks to define these categories purely in terms of the acoustic cues that are used to identify them.  Under this view, there is no need for innate phonetic categories or dimensions, so long as the acoustical cues to these categories cluster in an informative way.  Phonetic categories, under this view, are represented as distributions over acoustic cues.  There is a wealth of work showing that such distributional information can lead to categorical perception of speech sounds, that both adults and infants are very sensitive to such distributional information, and that at least some phonetic contrasts are learnable using general statistical methods.
+
+
+
+[[[COCHLEAR IMPLANTS]]] 
+These models of the representations used by the primary auditory cortex are based on general information-processing principles, and can thus tell us about the general nature of the input-output mapping of which the particular mapping in the normally-developing auditory system is a specific example.  Cochlear implants allow congenitally deaf persons to have some degree of hearing, but the quality of the auditory representation output by the implants is severely impoverished compared to a normally functioning cochlea.  The standard approach to implant design is to mimic the function of the normal cochlea.  However, this may not be the most optimal use of the limited bandwidth provided by the implant.  Models of the type I have used are easily generalized to the whole processing stream from the cochlea to the auditory cortex, and thus can provide insight into the specific ways in which an impoverished input format affects learned representations, and thus pointing the way to better implant designs.
+
+----------------------------------------------------------------------
+Papers
+
+Toscano & McMurray (2008)
+Weighting and integration of multiple cues
+
+multiple, non-orthogonal cues to phonetic features
+  voicing ~ VOT + length + etc.
+how is info integrate?
+  multidimensional representation
+  weight and combine multiple phonetic cues on same dimension
+framework
+  mixture of gaussians
+  cue weighting: sum of pairwise squared inter-cluster distances, normalized for cluster variance
+  learning rule
+    (McMurray, Aslin, & Toscano, 2009)
+    adjust means/variances towards observed distribution
+    weighted by cluster responsibility (share of lhood) or winner-take-all
+testing
+  /b/ and /p/ categories defined as Gaussians (from learned MOG) w/ highest posterior prob of /b/ and /p/
+results
+  find trading relation between VOT and VL cues in cue-weighting model but not in multi-d MOG
+
+----------------------------------------------------
+
+McMurray, Aslin, & Toscano (2009)
+Statistical learning of phonetic categories: insights from a computational approach
+
+summary
+  statistical learning may be important - is it sufficient?
+  no - need comptetition
+  sparseness of acoustic space?
+goal
+  investigate statistical learning
+  lots of previous clustering work (neural nets, genetic algorithms, etc.)
+  but don't specifically isolate the contributions of statistical learning
+  use method w/ minimal assumptions: mixture of gaussians
+mixture of gaussians
+  describe distribution of cue values as weighted sum of gaussians
+  categorization: which gaussian most likely generated an observation?
+learning:
+  batch (EM) vs. incremental
+  also need to learn number of categories
+  gradient descent (of means, variances, and weights)
+tests
+  poor performance w/ just gradient descent
+  (failure to suppress gaussians, inaccurate mu and sigma)
+  winner-take-all: very good performance
+  (good recovery of the two-cluster structure)
+pruning + enhancement
+  convert cue-space to category-space (vector of cluster probabilities)
+  discriminability is RMS between category-space vectors
+  pruning: discrimination is lost within categories
+  enhancement: difficult distinctions (e.g. fricative categories) are only possible after learning.
+sparsenesss
+  how much of cue-space is assigned to a category?
+  (all of it, after enough iterations)
+  
+  
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+Speech perception is a problem of extreme difficulty and subtlety but which is accomplished effortlessly by almost every single human being.  We acquire whatever language or languages surround us during the first few years of life, and ...
+
+Speech perception is interesting and challenging both as a perceptual task and as a higher-level, computational task.  Perceptually, comprehending speech requires identifying acoustic cues to different types of speech sounds, separating sounds from multiple sources, and learning to differentiate between some types of sounds but not others, etc.  From a computational perspective, ... [phonology?]
+
+The problem: how are speech sounds represented? how are these representations related to the lower-level acoustic representations and the higher-level linguistic representations?
+
+One way to approach this problem: look at learning of phonetic distinctions in development.  What information is available?  Infants are sensitive to distributional information.  Can categories be learned using only the distribution of acoustic input, based on how observations cluster?
+
+YES.  (citations?)  but pretty much only on toy problems - these learners break when presented with more realistic learning problems - many categories, which overlap.
+
+Given that the arguments against a minimal-pair-style learner are valid, the brain DOES learn categories based on distributional information.  Why don't these models work?  What other information is necessary?
+
+One possibility: the dimensions used to represent information in these models aren't right, and aren't sufficiently good at distinguishing between different categories.  (some evidence for this: the phonetic-invariants automatic speech recognition is a dismal failure).  Early auditory processing likely does a lot of the work necessary to tease apart speech sound categories.  If we can model the processing done by the auditory system, then we might be able to capture phonetic categories with relatively simply distributional learners, and it may indeed be NECESSARY to represent speech in the same way that the auditory system does in order for ANY distributional model to work.
+
+
+Each linguistically relevant feature is realized by a set of acoustic cues, and the multi-dimensional acoustic signal can thus be considered a combination of the effects of different underlying linguistic features.  Conversely, each channel of the acoustic signal yields some amount o finformaiton about the underlying linguistic signal.  For any given feature, some channels will be highly informative and others will be totally irrelevant.  
+
+For example, many languages distinguish between voiced and voiceless versions of the same sound (in English, /d/ vs. /t/).  One cue to voicing is voice-onset time (VOT): the time between the release of the stop and the beginning of voicing.  Voiced sounds typically have VOTs near zero or negative, whereas voiceless sounds have 
+
+Each language ...
+
+Under the assumption that phonetic categories can be identified by their acoustic cues, if a language distinguishes between two phonetic categories then those sounds should each correspond to a mode (or cluster) of acoustic observations made by the learner.  
+
+One way of understanding how information from multiple cues is combined to infer a single underlying value is Bayes-optimal cue-combination, which puts less weight on information from less reliable channels (higher variance).  This model describes very well human performance on cue-conflict tasks.  Toscano and MacMurray extended this model to situations where the modality of the underlying distribution is unknown, by fitting mixture-of-gaussian models with different numbers of clusters, and weighting dimensions based on how discriminable the clusters were in that dimension (as measured by normalized within-cluster variance).
+
+I. Intro
+II. Clustering/modality estimation
+  A. mixture of gaussians
+  B. How many clusters?
+III. Sparse coding of acoustic signal
+  A. Model how information is processed at level of A1
+  B. Vision - analogue with V1
+  C. Efficient coding - tradeoff between fidelity and cost
+  D. Preliminary data - STRFs
+IV. Wrap-up
+
+
+-----------------------------------------------------------------------
+
+On the question of how speech sounds are represented, there is a large and growing body of work showing that such distributional information can lead to categorical perception of speech sounds, that both adults and infants are very sensitive to such distributional information, and that at least some phonetic contrasts are learnable using general statistical methods.  
+
+There are many acoustic cues relevant to each phonetic distinction (e.g., voicing is cued by VOT as well as vowel length), and conversely each acoustic cue is influenced by many phonetic distinctions (e.g., vowel length is influenced by the voicing of the previous consonant as well as the identity of the vowel).  This raises two main questions: what is the set of acoustic cues that are used to represent speech sounds, and how is information from these cues combined to learn and use phonetic categories?
+
+The first question has seen little systematic investigation, apart from phoneticians staring at spectrograms <TOO STRONG>.  Given that the acoustic signal goes through many, many layers of processing beyond the spectrogram-like representation computed in the cochlea, it would be quite surprising if all or even many of the acoustic features relevant to speech perception appeared at this level of representation.  <sparse coding stuff>.  I have preliminary data showing that such a model learns representations that are similar to the receptive fields of neurons in the primary auditory cortex in both superficial (frequency-, rate-, and scale-selectivity) and deep ways (measured by the distribution of these properties over the population and the prevalence of temporal symmetry---a distinctive property of A1 STRFs---in the model representations).
+
+
+
+----------------------------------------------------------------------
+
+THE PROPOSAL, AT A CONCEPTUAL LEVEL:
+Phonetic categories: maybe they're represented/learned as distributions over acoustic cues
+Need two things to computationally flesh out this idea:
+  1) a (neurally, cognitively, and developmentally plausible) model of acoustic cues --- auditory processing/sparse coding
+  (what information does the brain extract from auditory signals?)
+  2) a (neurally, cognitively, and developmentally plausible) model of category learning from distributional information spread over multiple cues --- optimal cue-combination MOG model
+  (what information does the brain extract from distributional properties of the environment?)
+
+----------------------------------------------------------------------
+
+A CRAZY IDEA
+What happens if you do a LINEAR MODEL looking for highly PLATYKURTIC channel distributions??  (kind of like ICA---NON-gaussian channels---but in the other direction---not lepto- but platy-kurtic.
+How could you fit this kind of a model? 
+...The idea being that channels w/ multimodal/MOG distributions will likely be platykurtic --- NON-peaked about the mean (peaks spread out) and with short tails (at least as short as the tails of the cluster distributions)
+(in principle, this kind of structure is learnable by an ICA model that uses negentropy, or even an even, nonlinear function of kurtosis --- they're both sensitive to non-gaussianity in both directions.)
+BUT STILL --- if we're specifically fitting a MOG model, we'd probably like to find dimensions that are likely to have separable components, so if we FORCE the model to find platy-kurtic projections then those projections should help find the mixture dimensions...)
+
+
+----------------------------------------------------------------------
+
+Describe previous work in previous research experience
+
+Efficiently (3-4 sentences) 
+...this is a big thing (people who haven't worked on it before)
+hit big notes in research prop. -- details in other blurbs
+
+gradiency of physical signal
+...end up w/ one word, or another --- discrete
+don't get caught in detail
+  physical signal -- discrete words etc.
+research in phonetics/phonology sez "various dimensions have been extracted"
+  (introduce teminology) "certain cue dimenisons extracted out of signal
+  ...based on these dimensions, combining information, derive categories"
+THEN increase complexity
+getting at problem @1st and second stage
+  identified specific cues for e.g. voicing -- example (voicing?)
+  identified by looking at lots of phonetic data -- building models based on the assumption that these are relevant dimensions -- works okay, but certain problems
+  (don't necessarily need to mention probs) learner has to determine relevant dimensions
+novel approach to systematically derive cue dimensions from physical signal
+  what directions are relevant?
+  how can learner acquire dimensions? computational model can show
+  (how much is biologically given? how much in signal itself?)
+  very general assumptions -- works in other domains -- without adding anything to it -- how much can you get that way already?
+  are these dimensions also the ones that humans derive?
+will we find dimensions w/ nice clusters?
+  NO. phoneticians haven't been able to
+  have to combine info from multiple dimensions -- how?
+  are dimensions identical to phonetic cues?? (already have data! similar to F1/F2?
+  choose contrast -- find dimensions -- are they better than phonetic dimensions?
+MAKE THIS REALLY CLEAR ^^
+now last 1/3 of page:
+  multiple cues being combined
+  learning of mapping from dimensions to phonological categories
+  learning of dimensions (tuning?)
+[[[don't have to tell people HOW you will do it -- identify frameowkr 0--challenge, this is how I will overcome it]]]
+  learning happen at multiple levels simultaneously? 
+  is leanring of phonetic categories going on during word learning?
+    (estimate relative predictability/inferability of different contrasts /p-b/ vs. /k-g/ -- in context?)
+
+hard to get to what i'm doign before 1st half page
+"this is hard shit" -- lure them in with stuff they understand
+
+two processes interact? what does this correspond to? can I solve each of these problems better if I do them at the same time?
+
+FIND SOMEWHERE TO DRAW PARALLEL! problem is tractable?
+
+personal
+problems at different levels
+meta-scientific --- work I have done and plan on doing
+
+class of models -- connect them
+
+what appeals to me about taking this approach?
+  (tie together sexy new stuff to solve old problems)
+  language science -- niche-y and balkanized
+  want to integrate (long term) but acknowledge (short term)
+
+
+----------------------------------------------------------------------
+
+REPHRASING FLORIANS NOTES
+
+Big idea: speech perception involves at a minimum a mapping from gradient acoustic cues (VOT) to discrete linguistic categories (something like phonemes or words).  My proposal is for a computational approach to the first two stages of this process: the identification of acoustic features that are linguistically relevant, and the organization of these features into categorical representations.  Both components are motivated by and implemented using simple, general-purpose information processing principles which are applied to actual acoustic and neural data.
+
+
+
+Personal statement:
+Speech perception is an old problem that has received no shortage of attention, both because of its obvious practical significance and the challenge it poses for the descriptive and explanatory apparati of any scientific field.  An unfortunate consequence of this combination of interestingness and difficulty is that the study of speech has been largely restricted to very specific niches, both in terms of the types of theories that have been proposed and the things they have been proposed to explain.  This has led to a serious divergence between, for example, how people interested in automatic speech recognition and people interested in auditory perception view speech.  I think that there is immense and immediate potential for huge strides to be made simply by given serious but skeptical attention to the strides that have been made in understanding speech from all of these divergent perspectives.  Linguists have uncovered a fabulous wealth of empirical phenomena that need explanation, but have had little success explaining them in a way that is satisfactory or credible to neuroscientists, machine learning researchers, and cognitive psychologists.  Likewise, research in the neuroscience of the visual and auditory systems has shed great light on how the brains of a variety of species process complex perceptual signals, but interest in speech in particular has been limited to its usefulness as a readily available example of a complex sensory stimulus.  Work on the practical problem of automatic speech recognition has produced impressive gains in performance in these systems, but at the expense of their cognitive, developmental, or neural plausibility as models for how speech recognition is accomplished by human beings (who are, it must be remembered, by far and away the best speech recognition system in existence).
+
+This problem, for me, represents all of the qualities that I love about cognitive science---complex, intelligent behavior that has yet to receive a single, compelling scientific treatment despite its bearing on what it is that makes us human and its obvious practical significance.
+
+
+----------------------------------------------------------------------
+
+Previous research experience
+-- Safa - categorization, modeling, hands-on experience, skepticism
+   My interest in cognitive science began early in my undergraduate education.  In my first semester of college I took a philosophy course on metaphysics and epistemology.  Deciding that that was not for me, my second semester I took an introductory course on interdisciplinary cognitive science, and that was that.  Halfway through the semester, I asked the instructor (who, ironically, was the same instructor I had taken metaphysics and epistemology with the previous semester) how I could get involved with cognitive science research.  He put me in touch with Safa Zaki, and I somehow managed to talk her into taking me into her lab that summer.
+   I worked with Dr. Zaki from that summer (2006) until I graduated in 2009.  That first summer I spent reading up on models of categorization, both from exemplar theorists as well as multiple-systems theorists (who have proposed that different types of categorization tasks are handled by functionally- and neurally-disociable sub-systems).
+-- thesis - (bob port?) difficulties of modeling!
+   In the summer of 2008, I visited Indiana University to work with Bob Port.  Our free-wheeling conversations (and arguments) about the basic nature of phonetic categories deeply influenced my understanding of the basic problem of speech perception.  More practically, he introduced me to a vast body of literature on the issue, both behavioral and computational, nearly all of which found its way into my Cognitive Science honors thesis.
+   My thesis project addressed the question of whether representations of an intermediate size---between minimal units such as phonemes and actual words---were required to explain the interaction between lexicality (whether a target is an actual word or not) and effects of phonotactic probability/neighborhood density.  Using a modeling framework widely held to be a behaviorally and neurally plausible model of lexical access (Adaptive Resonance Theory, or ART), I implemented models with and without minimal- and intermediate-level representations ("phonemes" and "biphones").  By using techniques of global model comparison (where an uninformative prior over the models parameters is used to determine the range of qualitative data patterns that the model is capable of producing), I determined that removing intermediate-level representations rendered the model incapable of producing the qualitative data pattern observed in human subjects for non-words.
+-- UMD - computational neuroscience, phonetics/phonology/linguistics, bayesian modeling
+   I took advantage of the significant latitude afforded me as a Baggett Fellow to educate myself on modern statistical methods for data analysis and the modeling of cognitive processes.  I was involved in starting a project with Bill Idsardi, Ewan Dunbar, and Naomi Feldman to further evaluate and extend a hierarchical model of distributional learning of phonetic and lexical categories.
+   Bill and I were excited about the prospects of using unsupervised methods from the machine learning literature to model phonetic categorization, and he pointed me to a paper where sparse coding was used for art authentication[***].  We decided to apply a similar model to audition, which led to work (guided and as well by Dan Butts and Jonathan Simon) on modeling neural receptive fields in primary auditory cortex[***]. ...
+
+Personal statement
+-- wondering about what the mind is and how it works is old, universal, and distinctly human.
+-- cognitive science is attractive because it attempts to elaborate these universal questions in the framework and context of materialist science. (we have to convince people not just that we have the answers to the nature of the mind, but that we can even ask such questions in a meaningful and satisfying way)
+-- engineering/math/modeling impulse
+-- cognitive science --- can use math/modeling to answer some really deep questions. (just being able to relate them to scientific things is AWESOME).
+
+While I have not yet had the opportunity to TA, I am planning on TAing the second-semester undergraduate cognitive science course.  From my experience at Williams, I know the powerful role that ...
+
+My understanding of what cognitive science is has been shaped in equal parts by my education as a mathematician, computer scientists, and cognitive psychologist as well as by my serious interest and engagement in the larger philosophical and cultural context in which science is carried out.
+
+Research plan
+CLEAR STATEMENT OF THE PROBLEM
+-- speech perception - convert continuous/graded acoustic cues into discrete linguistic reprns
+  Speech perception is the process by which a continuous, acoustic signal---the pressure waves produced by a speaker---is converted into a discrete, linguistic representation---words, sentences, and ultimately meaning.  This is a task of extreme difficulty which normal humans accomplish with exquisite ease, and so naturally has intrigued and challenged psychologists, linguists, and engineers for as long as it has been remotely tractable.  However, despite the intense scrutiny by so many researchers, there is currently no single theoretical perspective that is satisfying to all interested parties.  Perhaps due to the difficulty of the problem, researchers in any one field tend to focus on the aspect of speech perception that their field finds relevant and tractable: automatic speech recognition engineers use brute-force statistical methods to infer phoneme labels on small bits of sound.
+  For many types of speech sounds, phonetics research has identified relevant acoustic cues.  For instance, _peach_ and _beach_ differ only in their the voicing of their initial sounds---/p/ is called voiceless and /b/ voiced.  The primary cue to voicing is an acoustic feature known as Voice-Onset Time (VOT), which is the amount of time between the opening of the lips (as indicated by a short burst of broadband noise) and the beginning of voicing (indicated by the start of regular vibration from the vocal cords).
+  Based on the existence of such cues, it would be natural to think that phonetic category identification should be as simple as reading off a few acoustic measures, but in practice this turns out not to be a good strategy, at least given the current state of our knowledge about which acoustic dimensions are relevant.  This simple picture is complicated by two facts.  The first is simply that all of these acoustic cues are gradient, whereas the underlying phonetic categories are discrete.  The second is that there is not a one-to-one mapping between acoustic cues and phonetic categories: each category has many cues, and each cue is relevant to many categorical distinctions.  
+-- what acoustic cues are relevant? (stage one)
+-- how are they combined into category judgements? (stage two)
+
+MY FRAMEWORK FOR APPROACHING IT
+--Phonetic categories ARE distributions over acoustic cues
+Phonetics has historically regarded phonetic categories as corresponding to a single, canonical values on a small number of acoustic cue dimensions, like VOT.  The presence of other factors (surrounding phonemes, talker variability, environmental noise, etc.) must be handled by filtering out their acoustic effects in order to extract the underlying, canonical acoustic-phonetic form.  Backing off on the assumption that phonetic categories are represented in the brain as distributions over acoustic values.  At its simplest, this view is equivalent to just adding some noise around the single, canonical representation assumed by phoneticians.  However, statistical models can be extremely complex and subtle, taking into consideration many of the complicating factors often treated as noise to be filtered out.
+  There is a wealth of behavioral and computational evidence suggesting that modeling phonetic categories as distributions over acoustic cues is plausible.  Both adults and infants are sensitive to distributional properties of acoustic cues, and indeed can exhibit categorical behavior after very quick exposure to a bimodal acoustic distribution.  General-purpose statistical models have been shown to be able to learn English voicing categories and Japanese vowel categories based on reasonably realistic sets of unlabeled input examples.
+[[[ ^^ this can be rephrased more like the first blurb...it's a bit awkward]]]
+  Of course, a framework for understanding phonetic categories is not itself a solution to the problem of human speech perception.  Indeed, modern automatic speech recognition systems use models that fall into this broad class of statistical models, but which perform rather poorly (compared to humans) and are brute-force methods and not plausible models of human behavior.  Human speech perception has behavioral, developmental, and neural components, each of which has been fairly well-studied, and any serious model of speech perception has to account for this wide range of data, if not explain all of it.  My proposal is for a two-part model of the learning and representation of phonetic categories.  The first part models how the auditory system extracts auditory cue dimensions from cochlear-filtered sound, and the second models how information from these cues is combined to form phonetic categories.  Both of these models are domain-general models of perception and categorization, and have been shown to be plausible solutions to a wide variety of issues.
+  [[[DEETS]]]

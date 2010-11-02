@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+
+
+\begin{document}
+
+%Research plan
+%CLEAR STATEMENT OF THE PROBLEM
+%-- speech perception - convert continuous/graded acoustic cues into discrete linguistic reprns
+Speech perception is the process by which a continuous, acoustic signal---the pressure waves produced by a speaker---is converted into a discrete, linguistic representation---words, sentences, and ultimately meaning.  This is a task of extreme difficulty which normal humans accomplish with exquisite ease, and so naturally has intrigued and challenged psychologists, linguists, and engineers for as long as it has been remotely tractable.  However, despite the intense scrutiny by so many researchers, there is currently no single theoretical perspective that is satisfying to all interested parties.  Perhaps due to the difficulty of the problem, researchers in any one field tend to focus on the aspect of speech perception that their field finds relevant and tractable: automatic speech recognition engineers use brute-force statistical methods to infer phoneme labels on small bits of sound.  Basic questions about the features of the acoustic signal are used to distinguish different categories of speech sounds and how those categories are represented in the brain remain unanswered.
+
+For some types of phonetic distinctions, phoneticians have identified relevant acoustic cues.  For instance, \emph{peach} and \emph{beach} differ only in their the voicing of their initial sounds---/p/ is called voiceless and /b/ voiced.  The primary cue to voicing is an acoustic feature known as Voice-Onset Time (VOT), which is the amount of time between the opening of the lips (as indicated by a short burst of broadband noise) and the beginning of voicing (indicated by the start of regular vibration from the vocal cords).  As VOT increases, listeners switch from a /b/ percept to a /p/ percept, which, as is characteristic for speech perception, occurs abruptly around 40 ms VOT.
+
+% IS THIS NECESSARY?
+%Based on the existence of such cues, it would be natural to think that phonetic category identification should be as simple as reading off a few acoustic measures, but in practice this turns out not to be a good strategy, at least given the current state of our knowledge about which acoustic dimensions are relevant.  This simple picture is complicated by two facts.  The first is simply that all of these acoustic cues are gradient, whereas the underlying phonetic categories are discrete.  The second is that there is not a one-to-one mapping between acoustic cues and phonetic categories: each category has many cues, and each cue is relevant to many categorical distinctions.  
+%-- what acoustic cues are relevant? (stage one)
+%-- how are they combined into category judgements? (stage two)
+
+%MY FRAMEWORK FOR APPROACHING IT
+%--Phonetic categories ARE distributions over acoustic cues
+Phonetics has historically regarded phonetic categories as corresponding to a single, canonical values on a small number of acoustic cue dimensions, like VOT.  The presence of other factors (surrounding phonemes, talker variability, environmental noise, etc.) must be handled by filtering out their acoustic effects in order to extract the underlying, canonical acoustic-phonetic form.  Backing off on the assumption that phonetic categories are represented in the brain as distributions over acoustic values.  At its simplest, this view is equivalent to just adding some noise around the single, canonical representation assumed by phoneticians.  However, statistical models can be extremely complex and subtle, taking into consideration many of the complicating factors often treated as noise to be filtered out.
+
+% plausibility of distributional representations
+There is a wealth of behavioral and computational evidence suggesting that modeling phonetic categories as distributions over acoustic cues is plausible.  Both adults and infants are sensitive to distributional properties of acoustic cues, and indeed can exhibit categorical behavior after very quick exposure to a bimodal acoustic distribution.  General-purpose statistical models have been shown to be able to learn English voicing categories and Japanese vowel categories based on reasonably realistic sets of unlabeled input examples.
+%[[[ ^^ this can be rephrased more like the first blurb...it's a bit awkward]]]
+
+% have to specify what kind of statistical models
+% (vs., especially, brute-force ASR type models)
+% 
+Of course, a framework for understanding phonetic categories is not itself a solution to the problem of human speech perception.  Indeed, modern automatic speech recognition systems use models that fall into this broad class of statistical models, but which perform rather poorly (compared to humans) and are brute-force methods and not plausible models of human behavior.  Human speech perception has behavioral, developmental, and neural components, each of which has been fairly well-studied, and any serious model of speech perception has to account for this wide range of data, if not explain all of it.  My proposal is for a two-part model of the learning and representation of phonetic categories.  
+%The first part models how the auditory system extracts auditory cue dimensions from cochlear-filtered sound, 
+The first part models how the auditory cortex captures the statistical structure of a complex acoustic environment in order to extract informative acoustic cue dimensions.
+The second part models how information from these cues is combined to form phonetic categories.  
+Both of these models are domain-general models of perception and categorization, and have been shown to be plausible solutions to a wide variety of issues.
+
+(Details go here)
+
+The intellectual merit of this approach to modeling and understanding human speech perception lies in the confluence of linguistics, neuroscience, psychology, and machine learning methods and results.  The models that I have proposed are general statistical techniques that have seen wide-ranging application, but which are consistent with the broad outlines of what is currently known about speech perception, as well as being neurally, developmentally, and behaviorally plausible.
+
+Such a massively interdisciplinary project necessarily has a very broad impact.  In the same way that work on speech perception from a number of fields provides substantial constraints on any tenable model of speech perception, so does such a model provide a range of testable hypotheses about the neural, developmental, behavioral, and computational traces of speech perception.  There are also obvious practical applications.  Automatic speech recognition is a challenging technological problem that human beings solve well, and so any insight into how human speech perception works has the potential to improve ASR technology.  
+% More importantly, COCHLEAR IMPLANTS BLAH BLAH BLAH
+\end{document}
