@@ -323,7 +323,7 @@ Big idea: speech perception involves at a minimum a mapping from gradient acoust
 
 
 Personal statement:
-Speech perception is an old problem that has received no shortage of attention, both because of its obvious practical significance and the challenge it poses for the descriptive and explanatory apparati of any scientific field.  An unfortunate consequence of this combination of interestingness and difficulty is that the study of speech has been largely restricted to very specific niches, both in terms of the types of theories that have been proposed and the things they have been proposed to explain.  This has led to a serious divergence between, for example, how people interested in automatic speech recognition and people interested in auditory perception view speech.  I think that there is immense and immediate potential for huge strides to be made simply by given serious but skeptical attention to the strides that have been made in understanding speech from all of these divergent perspectives.  Linguists have uncovered a fabulous wealth of empirical phenomena that need explanation, but have had little success explaining them in a way that is satisfactory or credible to neuroscientists, machine learning researchers, and cognitive psychologists.  Likewise, research in the neuroscience of the visual and auditory systems has shed great light on how the brains of a variety of species process complex perceptual signals, but interest in speech in particular has been limited to its usefulness as a readily available example of a complex sensory stimulus.  Work on the practical problem of automatic speech recognition has produced impressive gains in performance in these systems, but at the expense of their cognitive, developmental, or neural plausibility as models for how speech recognition is accomplished by human beings (who are, it must be remembered, by far and away the best speech recognition system in existence).
+Speech perception is an old problem that has received no shortage of attention, both because of its obvious practical significance and the challenge it poses for the descriptive and explanatory apparati of any scientific field.  An unfortunate consequence of this combination of interestingness and difficulty is that the study of speech has been largely restricted to very specific niches, both in terms of the types of theories that have been proposed and the things they have been proposed to explain.  This has led to a serious divergence between, for example, how people interested in automatic speech recognition and people interested in auditory perception view speech.  I think that there is immense and immediate potential for huge strides to be made simply by given serious but skeptical attention to the strides that have been made in understanding speech from all of these divergent perspectives.  Linguists have uncovered a fabulous wealth of empirical phenomena that need explanation, but have had little success explaining them in a way that is satisfactory or credible to neuroscientists, machine learning researchers, and cognitive psychologists.  Likewise, research in the neuroscience of the visual and auditory systems has shed a great deal of light on how the brains of a variety of species process complex perceptual signals, but interest in speech in particular has been limited to its usefulness as a readily available example of a complex sensory stimulus.  Work on the practical problem of automatic speech recognition has produced impressive gains in performance in these systems, but at the expense of their cognitive, developmental, or neural plausibility as models for how speech recognition is accomplished by human beings (who are, it must be remembered, by far and away the best speech recognition system in existence).
 
 This problem, for me, represents all of the qualities that I love about cognitive science---complex, intelligent behavior that has yet to receive a single, compelling scientific treatment despite its bearing on what it is that makes us human and its obvious practical significance.
 
@@ -367,3 +367,156 @@ Phonetics has historically regarded phonetic categories as corresponding to a si
 [[[ ^^ this can be rephrased more like the first blurb...it's a bit awkward]]]
   Of course, a framework for understanding phonetic categories is not itself a solution to the problem of human speech perception.  Indeed, modern automatic speech recognition systems use models that fall into this broad class of statistical models, but which perform rather poorly (compared to humans) and are brute-force methods and not plausible models of human behavior.  Human speech perception has behavioral, developmental, and neural components, each of which has been fairly well-studied, and any serious model of speech perception has to account for this wide range of data, if not explain all of it.  My proposal is for a two-part model of the learning and representation of phonetic categories.  The first part models how the auditory system extracts auditory cue dimensions from cochlear-filtered sound, and the second models how information from these cues is combined to form phonetic categories.  Both of these models are domain-general models of perception and categorization, and have been shown to be plausible solutions to a wide variety of issues.
   [[[DEETS]]]
+
+
+
+
+
+
+
+%%% PUT THIS IN PERSONAL STATEMENT! 
+%%% Of course, a framework for understanding phonetic categories is not itself a solution to the problem of human speech perception.  Indeed, modern automatic speech recognition systems use models that fall into this broad class of statistical models, but which perform rather poorly (compared to humans) and are brute-force methods and not plausible models of human behavior.  Human speech perception has behavioral, developmental, and neural components, each of which has been fairly well-studied, and any serious model of speech perception has to account for this wide range of data, if not explain all of it.  My proposal is for a two-part model of the learning and representation of phonetic categories.  
+
+RESEARCH SCRATCHPAD:
+
+% shorten/eliminate this?  put in stuff at the end about perceptual learning (e.g. Kraljic & Samuels) -- do learned representations exhibit same sort of plasticity?  advantage of probabilistic/distributional framework is that it allows other dimensions to modulate judgements along a given dimension in a principled way --- toscano & xmcmurray (2008 cog sci) --- florian: "there is evidence that features can be down-weighted (see vroomen et al's 07 paper for a summary of work on "perceptual recalibration"; also pado and ramirez 06). but very little of that work has taken the idea of optimal cue integration seriously / done is justice (kraljic and samuels, 06, 07, 08, 09 maybe also be relevant, though less directly so)."
+
+Phonetics has traditionally regarded each phonetic category as being represented as a single, canonical set of acoustic cues, but there is a growing body of work which suggests that each phonetic category is instead better understood as a distribution over a set of acoustic features.  Such an extension has the advantage of being a minimal extension of the traditional view---since these distributions can be summarized by e.g. their mean values---but which also acounts for evidence that both adults and children are sensitive to the distribution of cues encountered in an experimental setting.  
+
+
+
+PREVIOUS RESEARCH EXPERIENCE
+
+I have a wealth of research experience, which has both whetted my appetite for more and also substantially humbled me.  I know that research is not only rewarding and exciting but also challenging, and I have a appreciation of the difficulty of formulating research questions that are both interesting and tractable.  My previous experience has prepared me very well to take advantage of the exciting, collaborative, and interdisciplinary environment at the University of Rochester, and in the few short months that I've been here ... [TRAILS OFF]
+
+
+PERSONAL STATEMENT
+
+The reason I was drawn to the cognitive sciences and continue to pursue them enthusiastically is the potential for basic research to have very broad impact, both within the sciences (through the potential for and even necessity of interdisciplinary collaboration) as well as in the wider world.  Cognitive science brings together two fundamentally human impulses: the desire to understand how things work, which has traditionally been the purview of science, and the desire to understand who we are as people, which traditionally has not.  Like many cognitive scientists in my generation, I read Goedel, Escher, Bach when I was in high school and was surprised and delighted to discover that my deep interests in mathematics and philosophical conundrums could be connected in deep and satisfying (not to mention clever and entertaining) ways.  This led to an early flirtation with philosophy in college, until I realized that I could address big, difficult questions as a scientist, and in a manner where the work itself was more fulfilling and enjoyable, being grounded in explicit, testable ideas and models.
+
+
+My interest in philosophy also led me down the path of studying Buddhism and phenomenology, and ultimately a study-abroad program among the Tibetan exile community in India.  The combination of cultural anthropology and Tibetan Buddhism opened my eyes to the difficulty of understanding another's perspective, or even making an honest attempt to.  My views about cognitive science are heavily influenced by these experiences, and I approach the problem of understanding the perspective of people in different disciplines in an anthropological way as much as a scientific one.  These approaches, while superficially very different, have much in common, both being grounded in the need to understand the major concepts and beliefs that orient another's basic understanding of the world.  Where an anthropologist may be more concerned with particular beliefs about reincarnation, I am more concerned with, say, particular beliefs held by phonologists about what systems are distinct enough to be tackled separately.
+
+[[[mention the monk/science thing! that's cool! I like it! let's do more of that!]]]
+
+
+
+I've consistently sought to push beyond my intellectual comfort zone and take advantage of the strengths of whichever community I've found myself in.  At Maryland, I took advantage of the strong auditory neuroscience group
+[[[something about the IGERT group I was a part of]]]
+
+Truly interdisciplinary collaboration is equal parts teaching and learning...WHATWHATWHAT
+
+
+
+
+
+
+
+I've consistently sought out opportunities to engage with broad, open-minded communities, and have had the incredible fortune of benifitting from a number of such opportunities.  The culture at Williams College is an incredibly stimulating mix of people from different socio-economic, cultural, and geographical backgrounds, and this substantial diversity is well represented both by the range of intellectual disciplines that students and faculty embrace but within those disciplines as well.  
+
+[[[I want to say something about how it's hard to speak to issues of diversity as a white male, but this is only going to sound defensive, and arrogant when I then try to talk about them...better to just focus on the whole interdisciplinary thing?  I think at the end I can throw in a bit at the end about acapella and leadership, leading groups from diverse backgrounds with diverse aims]]]
+
+
+
+Finally, beyond my experience with diverse communities in academic settings, I also have had the pleasure of participating in and leading a musical group at Williams.  While the connection between college a cappella and interdisciplinary scientific research is not immediately obvious, there are, I believe, deep parallels.  We were a non-traditional group, and selected our members from a population with an unusually wide range of abilities, experience, and goals.  We learned an entirely new reproitoire every semester ... Leading such a group has taught me a great deal about how to deal WHATWHATWHAT
+
+[[[got to understand where people are coming from, and how to balance leadership and staying out of the way of what the group wants to do]]]
+
+
+WHAT'S THE FLOW HERE:
+
+okay...BIG IDEAS
+
+a diverse community is important
+  cognitive science is inherently interdisciplinary
+    (the only reason it exists is because no single other field has the resources to answer the big questions about the mind)
+    from personal experience, the best cognitive science gets done when there's push-back from other fields (philosophy/psychology/cs/biology)
+  my own experience: at Williams
+    cognitive science --- small, intense, diverse group
+    ability to do cognitive psych research, cognitive science, philosphy, study abroad, etc. and still be a math major
+    the study abroad stuff is good, I think --- making an honest attempt to understand others' perspectives.
+    (research stuff, too, but that should go into the previous research experience.)
+  UMD
+    (I'm thinking this should go in prev research too...
+
+
+
+
+HERE'S THE PERSONAL STATEMENT PROMPT:
+
+NSF Fellows are expected to become knowledge experts and leaders who can contribute significantly to research, education, and innovations in science and engineering. The purpose of this essay is to demonstrate your potential to satisfy this requirement. Your ideas and examples do not have to be confined necessarily to the discipline that you have chosen to pursue.
+
+Describe any personal, professional, or educational experiences or situations that have prepared you or contributed to your desire to pursue advanced study in science, technology, engineering, or mathematics. Describe your competencies and evidence of leadership potential. Discuss your career aspirations and how the NSF fellowship will enable you to achieve your goals.
+
+You MUST provide specific details in this essay that address BOTH the NSF Merit Review Criteria of Intellectual Merit and Broader Impacts in order for your application to be competitive. Please refer to the Program Announcement for further information on the NSF Merit Review Criteria.
+
+
+BREAKING IT DOWN:
+
+ * Describe any personal, professional, or educational experiences or situations that have prepared you or contributed to your desire to pursue advanced study in science, technology, engineering, or mathematics. 
+    - 
+
+ * Describe your competencies and 
+    - lots of research experience
+    - very broad interests/abilities --- formulate big, interesting questions
+    - very strong math background
+    - strong desire to connect w/ others, form communities
+    - passion for teaching/mentoring
+ * evidence of leadership potential.
+    - vocal participant in discussions/lab meetings/classes
+    - mentoring undergrads in Safa's lab
+    - a capella?
+ * Discuss your career aspirations (how the NSF fellowship will enable you to achieve your goals)
+
+
+INTELLECTUAL MERIT:
+broad experience, approach issues from a multitude of perspectives simultaneously
+depth of knowledge and experience in psychology/linguistics
+
+BROADER IMPACT:
+mentoring/teaching -- passionate desire to share what I know and my skills, and to make my skills useful to others
+  (I know that the best and fastest way to learn a new skill is to have someone nearby who is more of an expert than you are, and indeed I learned most of what I know about statistical analysis and programming in R from other students at Maryland.  This belief is reflected in the zeal with which I assist fellow students with diffucult programming or analysis problems in the lab, and)
+Broad dissemination of results
+  (sharing code, discussing work with lots of different people --- number 1 reason for going to Rochester, wide range of interests and fields under one roof, lots of very open minds)
+
+BIG POINT: PUT AT END: THIS IS THE TAKE-HOME MESSAGE: fostering vibrant, diverse community through teaching, outreach, and collaboration
+
+
+SPECIFIC THINGS
+I've done:
+ - Statistics workshop (Winter Storm)
+ - mentoring undergrads in Safa's lab
+ - active participant in community (speak up in classes, lab meetings, etc.)
+ - collaborate widely (Simon/Butts/Bill at UMD
+ - a capella directing
+I will do:
+ - post code/discuss research online
+ - TA
+ - outreach to deaf community --- RIT, So-One's project; cochlear implant work
+
+
+
+
+
+
+
+(importance of education/mentoring in my own life...WILLIAMS IS GR8...pay it forward)
+
+
+I. Why drawn to cognitive science? why language?
+  Intellectual difficulty
+    a. basic, foundational questions
+    b. lots and lots of different perspectives that need to be connected
+    (speech perception bit from the research prop here...)
+  Broad impacts:
+    a. within sciences --- highly interdisciplinary
+    b. outside of sciences ---
+      incredible potential to improve lives,
+      cultural conversation (advancing science in the public eye) 
+II. WIlliams has prepared me for BOTH aspects
+  1. Small, excellent faculty --> necessarily broad and universally challenging education
+    (At Williams, I consistently sought out what I felt were the most interesting and challenging classes, regardless of the division or department they belonged to, and I benefitted from close relationships with faculty in a wide variety of disciplines.  Such a challenging and diverse environment was extremely stimulating and it's the kind of environment that I believe is essential to doing good science and will seek tirelessly to foster wherever I am.)
+III. Study abroad
+  (One of the things I found most challenging and rewarding about Williams was the opportunity it provided to study abroad in a Tibetan exile community in India.  This experience was transformative in many ways, but thre are two that are particularly relevant here.  The first is that contact with people of a very different cultural background from myself forced a serious re-examination of some of the basic conceptual system with which I approach scientific questions and the world in general.)
+  (My decision to study abroad was the culmination of a persistent interest in making an honest attempt to understand the basic questions and concepts of other individuals and groups.  While this impulse is most familiar as an anthropological one---where it is applied to understanding differences between often highly distinct cultural groups---it is also, I believe, one that is indispensible for scientists, and ignored at the peril most especially of scientists in highly interdisciplinary fields such as cognitive science.  Truly collaborative interdisciplinary research often requires that researchers from different fields temporarily put their own theoretical frameworks aside in order to understand and benefit from the theoretical frameworks, methods, and ideas of other fields.  
+IV. Importance of mentoring in my career, and how I will pay/have paid it forward
