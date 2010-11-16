@@ -116,9 +116,32 @@ WHAT I WANT TO CONVEY (BUT NOT NECESSARILY SAY)
 
 A POSSIBLE OUTLINE:
 I. Why I think language is interesting
-II. Williams
-III. 
 
+I've always had an interest in what I now recognize as cognitive science, but I developed a fascination with language and computational modeling as an undergraduate.  Introductory courses in cognitve science and philosophy introduced me to the big, foundational issues and ways of thinking that characterize modern cognitive science, and courses in phonetics and phonology introduced me to the deeply challenging and interesting problem of speech sounds, as well as a set of theoretic tools for describing and explaining them.  The problem of finding a satisfactory explanation of speech perception and production, in particular, and of intelligent behavior, in general, is particularly compelling to me for two reasons.  First, there are few other fields where collaboration between different disciplines is so potentially beneficial, and even necessary.  Second, there are similarly few fields where basic research [[[---> applications, benefits, etc.]]]
+
+II. Williams
+
+My experience as an undergraduate at Williams College has prepared me to actively contribute to the field of cognitive science, both through my own work and by encouraging and enabling the work of others.  On the first count, the small and distinguished faculty at Williams [[[blah blah blah]]]
+
+I consider myself incredibly fortunate to have had the opportunities I did at Williams to work closely with faculty and my fellow students, and as a result I believe strongly in the importance of mentoring students at the graduate and undergraduate level throughout my career.  As a member of Safa Zaki's lab, I actively mentored other undergraduate RAs with less research experience, assisting with the design, implementation, and analysis of a number of experiments, as well as sharing my mathematical expertise by answering questions and discussing the mathematical foundations of theories and analytic techniques.
+
+I took on leadership roles in other areas, most noteably as the director of a student-run a cappella music group for two years.  This was a serious commitment of time and energy, and involved not only leading rehearsals and conducting.  We were a somewhat rag-tag group, generally accepting members with a wider range of backgrounds and abilities than other similar groups, and on top of that learning an entirely new reproitoire every semester.  Also unlike many groups, we chose our reproitoire democratically.  While such diversity and democracy made leading effectively a real challenge, it also gave our group a vitality and liveliness that I strove to preserve, even as I pushed our development into a more musically talented and serious group.  This experience was humbling and extremely rewarding, and while the relevance of this experience to a career as a research scientist may not be immediately apparent, cognitive science research also requires getting people from different backgrounds to work together, often with very different ideas about what the goals of the enterprise are.  One cannot simply dictate and command but must negotiate and explain.
+
+  A. Opportunity to work closely with faculty and other students (mentoring students in Safa's lab) --- leadership roles
+    1. a capella here?
+  B. Opportunity to take a wide range of classes AND focus in-depth on cog sci --- broad perspective on my chosen field
+III. Study abroad
+
+While at Williams, I also had the opportunity to study abroad in India, within the Tibetan exile community there.  
+
+  C. Relationship between science, philosophy, and culture
+IV. UMD
+  A. Relationships w/ linguists (opposite of my own viewpoint...hard to get along but we both saw the other's side)
+  B. IGERT --- role of graduate training in bringing together people in different fields/departments
+    1. ferret project
+    2. winter storm stats
+V. Rochester
+  A. Extremely energized by collaborative environment --- particularly sharing between students.
 
 
 
