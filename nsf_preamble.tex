@@ -1,6 +1,32 @@
+% 1-in margins
 \usepackage[margin=1in]{geometry}
+% font specification (needs to be used w/ XeLaTeX)
 \usepackage{fontspec}
-\setmainfont[Mapping=tex-text]{Times New Roman}
+% use Times New Roman
+\setmainfont[Mapping=tex-text, Scale=1.00]{Times New Roman}
 
-%\usepackage{apacite}
+
 \usepackage{cite}
+% remove 'References' heading, including white space...
+\renewcommand\refname{\vspace{-2em}}
+
+
+% header/footer --- \thisessay needs to be specified in each
+% individual essay
+\usepackage{fancyhdr} 
+\pagestyle{fancy} 
+\lhead{\thisessay}
+\chead{}
+\rhead{David Kleinschmidt}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+
+
+% remove separation between items in bibliography
+\makeatletter
+\newcommand{\adjustmybblparameters}{\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}}
+\let\ORIGINALlatex@openbib@code=\@openbib@code
+\renewcommand{\@openbib@code}{\ORIGINALlatex@openbib@code\adjustmybblparameters}
+\makeatother
