@@ -1,0 +1,37 @@
+In the past year, my work has continued to advance our understanding of
+human speech perception. In particular, I have built on my earlier
+theoretical work on how people rapidly adapt to an unfamiliar talker.
+The central idea of this work is your experience with other talkers
+helps you rapidly learn the particular idiosyncrasies of a new,
+unfamiliar talker. An vitally important part of this process is the
+implicit knowledge that listeners have about the range of variability
+that they should expect across different kinds of talkers. These beliefs
+are subjective and implicit, and are thus very hard to probe directly,
+but in the last year I've shown that this is possible by looking at how
+well people adapt to different accents and working backwards to their
+shared prior beliefs. I've presented this work as a talk at the workshop
+on Sociolinguistic Variation and Language Processing, and it has also
+been accepted for talks at two other conferences (LabPhon and CogSci).
+
+My other major focus over the last year has been to better understand
+the neural mechanisms behind people's ability to rapidly adapt to
+different talkers. This work has theoretical and empirical components.
+Theoretically, I have developed connections between high-level
+computational models of how human listeners adapt, and low-level
+computational theories about how neural circuits adapt to changes in
+their environment. This work was published this year in Psychonomic
+Bulletin and Review. On the empirical side, I have collected and
+analyzed data on how the human brain adapts to differences between
+talkers, using fMRI and cutting-edge computational analyses. My
+preliminary results show that at least one part of the speech perception
+system codes acoustic input in a way that reflects learned,
+talker-specific statistical properties. This finding is a significant
+step in understanding the neural mechanisms of how listeners deal with
+variability across talkers.
+
+Finally, the computational framework I developed during my GRFP for
+understanding how listeners cope with variability across talkers has
+already had broad and substantial impact. Since appearing in
+Psychological Review in early 2015, it has already been cited 45 times
+(according to Google Scholar). I also secured an tenure-track
+appointment in cognitive psychology at Rutgers (New Brunswick).
